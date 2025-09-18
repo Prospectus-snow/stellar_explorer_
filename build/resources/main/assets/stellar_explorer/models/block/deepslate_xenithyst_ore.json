@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "stellar_explorer:block/deepslate_xenithyst_ore",
+    "particle": "stellar_explorer:block/deepslate_xenithyst_ore"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "EnergyOutput",
+    "blockstateList": [
+      {
+        "texture": "energy_output2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "energy_output_working:default",
+        "luminance": 12,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

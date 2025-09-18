@@ -1,0 +1,9 @@
+{
+  "parent": "stellar_explorer:custom/energy_output_working",
+  "textures": {
+    "all": "stellar_explorer:block/energy_output2",
+    "particle": "stellar_explorer:block/energy_output",
+    "0": "stellar_explorer:block/energy_output2"
+  },
+  "render_type": "cutout"
+}

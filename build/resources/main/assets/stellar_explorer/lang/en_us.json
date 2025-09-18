@@ -1,0 +1,22 @@
+{
+  "item.stellar_explorer.location_record_card.description_0": "§8No location selected",
+  "block.stellar_explorer.redstone_extractor.description_1": "§8Signal strength affects speed",
+  "block.stellar_explorer.redstone_extractor.description_0": "§8Slowly extract Void Exudate from Redstone Signal",
+  "block.stellar_explorer.energy_output": "Energy Output",
+  "block.stellar_explorer.deepslate_xenithyst_ore": "Deepslate Xenithyst Ore",
+  "block.stellar_explorer.energy_output.description_1": "§8Works when placed above a machine",
+  "block.stellar_explorer.energy_output.description_2": "§8Enables wireless transfer of Void Exudate between machines",
+  "block.stellar_explorer.void_tank": "Void Tank",
+  "block.stellar_explorer.energy_output.description_0": "§8Right-click to switch on/off",
+  "item.stellar_explorer.location_record_card": "Location Record Card",
+  "item.stellar_explorer.description_shift": "§8Hold §5[Shift] §8for Details",
+  "item_group.stellar_explorer.stellar_explorer": "Stellar Explorer",
+  "item.stellar_explorer.raw_xenithyst": "Raw Xenithyst",
+  "item.stellar_explorer.machine.maxvoidexudate": "Max Capacity: ",
+  "item.stellar_explorer.xenithyst_shard": "Xenithyst Shard",
+  "item.stellar_explorer.machine.maxvespeed": "Max Output Speed: ",
+  "block.stellar_explorer.void_tank.description_0": "§8Stores a Large Amount of Void Exudate",
+  "block.stellar_explorer.xenithyst_ore": "Xenithyst Ore",
+  "item.stellar_explorer.machine.vespeed": "Output Speed: ",
+  "block.stellar_explorer.redstone_extractor": "Redstone Extractor"
+}

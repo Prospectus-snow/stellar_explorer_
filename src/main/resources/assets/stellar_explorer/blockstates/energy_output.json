@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "stellar_explorer:block/energy_output"
+    },
+    "blockstate=1": {
+      "model": "stellar_explorer:block/energy_output_blockstates_blockstate_0"
+    }
+  }
+}

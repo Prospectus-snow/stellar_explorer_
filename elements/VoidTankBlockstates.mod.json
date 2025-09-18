@@ -1,0 +1,74 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "VoidTank",
+    "blockstateList": [
+      {
+        "texture": "machine_casing",
+        "textureTop": "machine_casing_output",
+        "textureLeft": "void_tank_side2",
+        "textureFront": "void_tank_side2",
+        "textureRight": "void_tank_side2",
+        "textureBack": "void_tank_side2",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 2,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "machine_casing",
+        "textureTop": "machine_casing_output",
+        "textureLeft": "void_tank_side3",
+        "textureFront": "void_tank_side3",
+        "textureRight": "void_tank_side3",
+        "textureBack": "void_tank_side3",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 4,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "machine_casing",
+        "textureTop": "machine_casing_output",
+        "textureLeft": "void_tank_side4",
+        "textureFront": "void_tank_side4",
+        "textureRight": "void_tank_side4",
+        "textureBack": "void_tank_side4",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 6,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "machine_casing",
+        "textureTop": "machine_casing_output",
+        "textureLeft": "void_tank_side5",
+        "textureFront": "void_tank_side5",
+        "textureRight": "void_tank_side5",
+        "textureBack": "void_tank_side5",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 8,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "machine_casing",
+        "textureTop": "machine_casing_output",
+        "textureLeft": "void_tank_side6",
+        "textureFront": "void_tank_side6",
+        "textureRight": "void_tank_side6",
+        "textureBack": "void_tank_side6",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 10,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

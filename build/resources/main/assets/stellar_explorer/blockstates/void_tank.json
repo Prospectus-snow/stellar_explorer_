@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "stellar_explorer:block/void_tank"
+    },
+    "blockstate=1": {
+      "model": "stellar_explorer:block/void_tank_blockstates_blockstate_0"
+    },
+    "blockstate=2": {
+      "model": "stellar_explorer:block/void_tank_blockstates_blockstate_1"
+    },
+    "blockstate=3": {
+      "model": "stellar_explorer:block/void_tank_blockstates_blockstate_2"
+    },
+    "blockstate=4": {
+      "model": "stellar_explorer:block/void_tank_blockstates_blockstate_3"
+    },
+    "blockstate=5": {
+      "model": "stellar_explorer:block/void_tank_blockstates_blockstate_4"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "stellar_explorer:item/location_record_card_empty"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "stellar_explorer:location_record_card_empty": 1
+      },
+      "model": "stellar_explorer:item/location_record_card_0"
+    }
+  ]
+}

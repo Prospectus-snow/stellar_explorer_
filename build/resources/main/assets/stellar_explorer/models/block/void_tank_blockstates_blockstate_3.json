@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "stellar_explorer:block/machine_casing",
+    "up": "stellar_explorer:block/machine_casing_output",
+    "north": "stellar_explorer:block/void_tank_side5",
+    "east": "stellar_explorer:block/void_tank_side5",
+    "south": "stellar_explorer:block/void_tank_side5",
+    "west": "stellar_explorer:block/void_tank_side5",
+    "particle": "stellar_explorer:block/machine_casing"
+  },
+  "render_type": "solid"
+}

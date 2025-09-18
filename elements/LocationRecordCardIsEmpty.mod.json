@@ -1,0 +1,7 @@
+{
+  "_fv": 73,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"47\" y=\"77\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"item_nbt_logic_get\"><value name=\"item\"><block type=\"itemstack_to_mcitem\"></block></value><value name=\"tagName\"><block type=\"text\"><field name=\"TEXT\">isNoEmpty</field></block></value></block></value><statement name=\"DO0\"><block type=\"return_number\"><value name=\"return\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></statement><next><block type=\"return_number\"><value name=\"return\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value></block></next></block></next></block><block type=\"logic_binary_ops\" x=\"333\" y=\"177\"><field name=\"OP\">EQ</field><value name=\"B\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value></block><block type=\"logic_negate\" x=\"273\" y=\"306\"></block><block type=\"return_logic\" x=\"142\" y=\"509\"><value name=\"return\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value></block></xml>"
+  }
+}

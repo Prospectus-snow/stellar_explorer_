@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "RedstoneExtractor",
+    "blockstateList": [
+      {
+        "texture": "machine_casing",
+        "textureTop": "machine_casing_output",
+        "textureLeft": "redstone_generator_side_hasredstone",
+        "textureFront": "extractor_front__hasredstone",
+        "textureRight": "redstone_generator_side_hasredstone",
+        "textureBack": "redstone_generator_side_hasredstone",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 7,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "machine_casing",
+        "textureTop": "machine_casing_output",
+        "textureLeft": "extracor_front_working",
+        "textureFront": "extracor_front_working",
+        "textureRight": "extracor_front_working",
+        "textureBack": "extracor_front_working",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 10,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "machine_casing",
+        "textureTop": "machine_casing_output",
+        "textureLeft": "redstone_generator_side_hasredstone",
+        "textureFront": "extracor_front_working_hasredstone",
+        "textureRight": "redstone_generator_side_hasredstone",
+        "textureBack": "redstone_generator_side_hasredstone",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 10,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

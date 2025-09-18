@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "stellar_explorer:block/machine_casing",
+    "up": "stellar_explorer:block/machine_casing_output",
+    "north": "stellar_explorer:block/extractor_front__hasredstone",
+    "east": "stellar_explorer:block/redstone_generator_side_hasredstone",
+    "south": "stellar_explorer:block/redstone_generator_side_hasredstone",
+    "west": "stellar_explorer:block/redstone_generator_side_hasredstone",
+    "particle": "stellar_explorer:block/machine_casing"
+  },
+  "render_type": "solid"
+}
