@@ -42,6 +42,7 @@ import net.mcreator.stellarexplorer.procedures.MachineVETooltipProcedure;
 import net.mcreator.stellarexplorer.block.entity.VoidTankBlockEntity;
 
 import java.util.List;
+import java.util.Objects;
 
 import io.netty.buffer.Unpooled;
 
@@ -113,7 +114,12 @@ public class VoidTankBlock extends Block implements EntityBlock {
 		int z = pos.getZ();
 		VoidTankTickProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
+
+		if (world.getBlockEntity(pos) != null) {
+			Objects.requireNonNull(world.getBlockEntity(pos)).setChanged(); // 标记需要保存
+		}
 	}
+
 
 	@Override
 	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
@@ -150,6 +156,7 @@ public class VoidTankBlock extends Block implements EntityBlock {
 		super.triggerEvent(state, world, pos, eventID, eventParam);
 		BlockEntity blockEntity = world.getBlockEntity(pos);
 		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
+
 	}
 
 	@Override
@@ -161,8 +168,11 @@ public class VoidTankBlock extends Block implements EntityBlock {
 				world.updateNeighbourForOutputSignal(pos, this);
 			}
 			super.onRemove(state, world, pos, newState, isMoving);
+
 		}
 	}
+
+
 
 	@Override
 	public boolean hasAnalogOutputSignal(BlockState state) {

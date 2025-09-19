@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "energy_output",
+        "1": "meteor_attractor_side",
+        "2": "machine_casing",
+        "3": "meteor_attractor_bottom"
+      },
+      "name": "default"
+    }
+  }
+}

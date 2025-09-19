@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.stellarexplorer.block.entity.VoidTankBlockEntity;
 import net.mcreator.stellarexplorer.block.entity.RedstoneExtractorBlockEntity;
+import net.mcreator.stellarexplorer.block.entity.MeteorAttractorBlockEntity;
 import net.mcreator.stellarexplorer.block.entity.EnergyOutputBlockEntity;
 import net.mcreator.stellarexplorer.StellarExplorerMod;
 
@@ -21,6 +22,7 @@ public class StellarExplorerModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> VOID_TANK = register("void_tank", StellarExplorerModBlocks.VOID_TANK, VoidTankBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> REDSTONE_EXTRACTOR = register("redstone_extractor", StellarExplorerModBlocks.REDSTONE_EXTRACTOR, RedstoneExtractorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> ENERGY_OUTPUT = register("energy_output", StellarExplorerModBlocks.ENERGY_OUTPUT, EnergyOutputBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> METEOR_ATTRACTOR = register("meteor_attractor", StellarExplorerModBlocks.METEOR_ATTRACTOR, MeteorAttractorBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

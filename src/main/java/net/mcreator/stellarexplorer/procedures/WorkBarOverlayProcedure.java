@@ -13,6 +13,9 @@ public class WorkBarOverlayProcedure {
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == StellarExplorerModBlocks.REDSTONE_EXTRACTOR.get()) {
 			MaxWorking = 1500;
 		}
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == StellarExplorerModBlocks.METEOR_ATTRACTOR.get()) {
+			MaxWorking = 400;
+		}
 		if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);

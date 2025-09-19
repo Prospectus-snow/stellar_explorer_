@@ -35,6 +35,7 @@ public class StellarExplorerModItems {
 	public static final RegistryObject<Item> REDSTONE_EXTRACTOR = block(StellarExplorerModBlocks.REDSTONE_EXTRACTOR);
 	public static final RegistryObject<Item> LOCATION_RECORD_CARD = REGISTRY.register("location_record_card", () -> new LocationRecordCardItem());
 	public static final RegistryObject<Item> ENERGY_OUTPUT = block(StellarExplorerModBlocks.ENERGY_OUTPUT);
+	public static final RegistryObject<Item> METEOR_ATTRACTOR = block(StellarExplorerModBlocks.METEOR_ATTRACTOR);
 
 	// Start of user code block custom items
 	// End of user code block custom items

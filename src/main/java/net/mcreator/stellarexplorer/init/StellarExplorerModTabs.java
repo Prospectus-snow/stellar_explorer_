@@ -26,5 +26,6 @@ public class StellarExplorerModTabs {
 				tabData.accept(StellarExplorerModBlocks.ENERGY_OUTPUT.get().asItem());
 				tabData.accept(StellarExplorerModBlocks.VOID_TANK.get().asItem());
 				tabData.accept(StellarExplorerModBlocks.REDSTONE_EXTRACTOR.get().asItem());
+				tabData.accept(StellarExplorerModBlocks.METEOR_ATTRACTOR.get().asItem());
 			}).build());
 }

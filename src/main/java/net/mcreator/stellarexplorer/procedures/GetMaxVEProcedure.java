@@ -14,6 +14,9 @@ public class GetMaxVEProcedure {
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == StellarExplorerModBlocks.VOID_TANK.get()) {
 			return 40000;
 		}
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == StellarExplorerModBlocks.METEOR_ATTRACTOR.get()) {
+			return 1200;
+		}
 		return 400;
 	}
 }

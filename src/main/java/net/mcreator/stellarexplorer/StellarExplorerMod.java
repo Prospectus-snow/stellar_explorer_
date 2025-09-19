@@ -21,6 +21,7 @@ import net.mcreator.stellarexplorer.init.StellarExplorerModTabs;
 import net.mcreator.stellarexplorer.init.StellarExplorerModParticleTypes;
 import net.mcreator.stellarexplorer.init.StellarExplorerModMenus;
 import net.mcreator.stellarexplorer.init.StellarExplorerModItems;
+import net.mcreator.stellarexplorer.init.StellarExplorerModEntities;
 import net.mcreator.stellarexplorer.init.StellarExplorerModBlocks;
 import net.mcreator.stellarexplorer.init.StellarExplorerModBlockEntities;
 
@@ -47,6 +48,7 @@ public class StellarExplorerMod {
 		StellarExplorerModBlocks.REGISTRY.register(bus);
 		StellarExplorerModBlockEntities.REGISTRY.register(bus);
 		StellarExplorerModItems.REGISTRY.register(bus);
+		StellarExplorerModEntities.REGISTRY.register(bus);
 
 		StellarExplorerModTabs.REGISTRY.register(bus);
 

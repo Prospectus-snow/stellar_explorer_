@@ -1,0 +1,12 @@
+{
+  "parent": "stellar_explorer:custom/meteor_attractor_working",
+  "textures": {
+    "all": "stellar_explorer:block/machine_casing",
+    "particle": "stellar_explorer:block/machine_casing",
+    "0": "stellar_explorer:block/energy_output2",
+    "1": "stellar_explorer:block/meteor_attractor_side",
+    "2": "stellar_explorer:block/machine_casing",
+    "3": "stellar_explorer:block/meteor_attractor_bottom"
+  },
+  "render_type": "cutout"
+}

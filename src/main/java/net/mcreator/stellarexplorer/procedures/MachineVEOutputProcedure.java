@@ -78,17 +78,25 @@ public class MachineVEOutputProcedure {
 			targetBlock = (world.getBlockState(BlockPos.containing(targetX, targetY, targetZ)));
 			targetBlock2 = (world.getBlockState(BlockPos.containing(targetX, targetY - 1, targetZ)));
 			targetBlock3 = (world.getBlockState(BlockPos.containing(x, y + 1, z)));
-			if (targetBlock.getBlock() == StellarExplorerModBlocks.ENERGY_OUTPUT.get() && (targetBlock.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip14 ? targetBlock.getValue(_getip14) : -1) == 1
-					&& targetBlock3.getBlock() == StellarExplorerModBlocks.ENERGY_OUTPUT.get() && (targetBlock3.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip16 ? targetBlock3.getValue(_getip16) : -1) == 1
-					&& targetBlock2.is(BlockTags.create(new ResourceLocation("stellar_explorer:machine")))) {
-				if (GetMaxVEProcedure.execute(world, targetX, targetY - 1, targetZ) > new Object() {
+			if ((targetBlock.getBlock() == StellarExplorerModBlocks.METEOR_ATTRACTOR.get()
+					|| targetBlock.getBlock() == StellarExplorerModBlocks.ENERGY_OUTPUT.get() && (targetBlock.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip15 ? targetBlock.getValue(_getip15) : -1) == 1)
+					&& targetBlock3.getBlock() == StellarExplorerModBlocks.ENERGY_OUTPUT.get() && (targetBlock3.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip17 ? targetBlock3.getValue(_getip17) : -1) == 1
+					&& (targetBlock.getBlock() == StellarExplorerModBlocks.METEOR_ATTRACTOR.get() || targetBlock2.is(BlockTags.create(new ResourceLocation("stellar_explorer:machine"))))) {
+				if ((targetBlock.getBlock() == StellarExplorerModBlocks.METEOR_ATTRACTOR.get() && GetMaxVEProcedure.execute(world, targetX, targetY, targetZ) > new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, BlockPos.containing(targetX, targetY - 1, targetZ), "VoidExudate") && new Object() {
+				}.getValue(world, BlockPos.containing(targetX, targetY, targetZ), "VoidExudate") || GetMaxVEProcedure.execute(world, targetX, targetY - 1, targetZ) > new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, BlockPos.containing(targetX, targetY - 1, targetZ), "VoidExudate")) && new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
@@ -99,20 +107,77 @@ public class MachineVEOutputProcedure {
 					count = 0;
 					for (int index0 = 0; index0 < 50; index0++) {
 						count = count + 1;
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles((SimpleParticleType) (StellarExplorerModParticleTypes.VE_OUTPUT.get()), (x + 0.5 + ((targetX - x) / 50) * count), (y + 1.7 + ((targetY - (y + 1)) / 50) * count),
-									(z + 0.5 + ((targetZ - z) / 50) * count), 1, 0, 0, 0, 0);
+						if (targetBlock.getBlock() == StellarExplorerModBlocks.METEOR_ATTRACTOR.get()) {
+							if (world instanceof ServerLevel _level)
+								_level.sendParticles((SimpleParticleType) (StellarExplorerModParticleTypes.VE_OUTPUT.get()), (x + 0.5 + ((targetX - x) / 50) * count), (y + 1.7 + (((targetY + 1) - (y + 1)) / 50) * count),
+										(z + 0.5 + ((targetZ - z) / 50) * count), 1, 0, 0, 0, 0);
+						} else {
+							if (world instanceof ServerLevel _level)
+								_level.sendParticles((SimpleParticleType) (StellarExplorerModParticleTypes.VE_OUTPUT.get()), (x + 0.5 + ((targetX - x) / 50) * count), (y + 1.7 + ((targetY - (y + 1)) / 50) * count),
+										(z + 0.5 + ((targetZ - z) / 50) * count), 1, 0, 0, 0, 0);
+						}
 					}
 				}
 				for (int index1 = 0; index1 < 20; index1++) {
-					if (GetMaxVEProcedure.execute(world, targetX, targetY - 1, targetZ) > new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+					if (targetBlock.getBlock() == StellarExplorerModBlocks.METEOR_ATTRACTOR.get()) {
+						if (GetMaxVEProcedure.execute(world, targetX, targetY, targetZ) > new Object() {
+							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+								BlockEntity blockEntity = world.getBlockEntity(pos);
+								if (blockEntity != null)
+									return blockEntity.getPersistentData().getDouble(tag);
+								return -1;
+							}
+						}.getValue(world, BlockPos.containing(targetX, targetY, targetZ), "VoidExudate")) {
+							if (GetMaxVEProcedure.execute(world, targetX, targetY, targetZ) > new Object() {
+								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+									BlockEntity blockEntity = world.getBlockEntity(pos);
+									if (blockEntity != null)
+										return blockEntity.getPersistentData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(world, BlockPos.containing(targetX, targetY, targetZ), "VoidExudate") && new Object() {
+								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+									BlockEntity blockEntity = world.getBlockEntity(pos);
+									if (blockEntity != null)
+										return blockEntity.getPersistentData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(world, BlockPos.containing(x, y, z), "VoidExudate") > 0) {
+								if (!world.isClientSide()) {
+									BlockPos _bp = BlockPos.containing(targetX, targetY, targetZ);
+									BlockEntity _blockEntity = world.getBlockEntity(_bp);
+									BlockState _bs = world.getBlockState(_bp);
+									if (_blockEntity != null)
+										_blockEntity.getPersistentData().putDouble("VoidExudate", (new Object() {
+											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+												BlockEntity blockEntity = world.getBlockEntity(pos);
+												if (blockEntity != null)
+													return blockEntity.getPersistentData().getDouble(tag);
+												return -1;
+											}
+										}.getValue(world, BlockPos.containing(targetX, targetY, targetZ), "VoidExudate") + 1));
+									if (world instanceof Level _level)
+										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+								}
+								if (!world.isClientSide()) {
+									BlockPos _bp = BlockPos.containing(x, y, z);
+									BlockEntity _blockEntity = world.getBlockEntity(_bp);
+									BlockState _bs = world.getBlockState(_bp);
+									if (_blockEntity != null)
+										_blockEntity.getPersistentData().putDouble("VoidExudate", ((new Object() {
+											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+												BlockEntity blockEntity = world.getBlockEntity(pos);
+												if (blockEntity != null)
+													return blockEntity.getPersistentData().getDouble(tag);
+												return -1;
+											}
+										}.getValue(world, BlockPos.containing(x, y, z), "VoidExudate")) - 1));
+									if (world instanceof Level _level)
+										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+								}
+							}
 						}
-					}.getValue(world, BlockPos.containing(targetX, targetY - 1, targetZ), "VoidExudate")) {
+					} else {
 						if (GetMaxVEProcedure.execute(world, targetX, targetY - 1, targetZ) > new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -120,45 +185,54 @@ public class MachineVEOutputProcedure {
 									return blockEntity.getPersistentData().getDouble(tag);
 								return -1;
 							}
-						}.getValue(world, BlockPos.containing(targetX, targetY - 1, targetZ), "VoidExudate") && new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "VoidExudate") > 0) {
-							if (!world.isClientSide()) {
-								BlockPos _bp = BlockPos.containing(targetX, targetY - 1, targetZ);
-								BlockEntity _blockEntity = world.getBlockEntity(_bp);
-								BlockState _bs = world.getBlockState(_bp);
-								if (_blockEntity != null)
-									_blockEntity.getPersistentData().putDouble("VoidExudate", (new Object() {
-										public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-											BlockEntity blockEntity = world.getBlockEntity(pos);
-											if (blockEntity != null)
-												return blockEntity.getPersistentData().getDouble(tag);
-											return -1;
-										}
-									}.getValue(world, BlockPos.containing(targetX, targetY - 1, targetZ), "VoidExudate") + 1));
-								if (world instanceof Level _level)
-									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-							}
-							if (!world.isClientSide()) {
-								BlockPos _bp = BlockPos.containing(x, y, z);
-								BlockEntity _blockEntity = world.getBlockEntity(_bp);
-								BlockState _bs = world.getBlockState(_bp);
-								if (_blockEntity != null)
-									_blockEntity.getPersistentData().putDouble("VoidExudate", ((new Object() {
-										public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-											BlockEntity blockEntity = world.getBlockEntity(pos);
-											if (blockEntity != null)
-												return blockEntity.getPersistentData().getDouble(tag);
-											return -1;
-										}
-									}.getValue(world, BlockPos.containing(x, y, z), "VoidExudate")) - 1));
-								if (world instanceof Level _level)
-									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}.getValue(world, BlockPos.containing(targetX, targetY - 1, targetZ), "VoidExudate")) {
+							if (GetMaxVEProcedure.execute(world, targetX, targetY - 1, targetZ) > new Object() {
+								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+									BlockEntity blockEntity = world.getBlockEntity(pos);
+									if (blockEntity != null)
+										return blockEntity.getPersistentData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(world, BlockPos.containing(targetX, targetY - 1, targetZ), "VoidExudate") && new Object() {
+								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+									BlockEntity blockEntity = world.getBlockEntity(pos);
+									if (blockEntity != null)
+										return blockEntity.getPersistentData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(world, BlockPos.containing(x, y, z), "VoidExudate") > 0) {
+								if (!world.isClientSide()) {
+									BlockPos _bp = BlockPos.containing(targetX, targetY - 1, targetZ);
+									BlockEntity _blockEntity = world.getBlockEntity(_bp);
+									BlockState _bs = world.getBlockState(_bp);
+									if (_blockEntity != null)
+										_blockEntity.getPersistentData().putDouble("VoidExudate", (new Object() {
+											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+												BlockEntity blockEntity = world.getBlockEntity(pos);
+												if (blockEntity != null)
+													return blockEntity.getPersistentData().getDouble(tag);
+												return -1;
+											}
+										}.getValue(world, BlockPos.containing(targetX, targetY - 1, targetZ), "VoidExudate") + 1));
+									if (world instanceof Level _level)
+										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+								}
+								if (!world.isClientSide()) {
+									BlockPos _bp = BlockPos.containing(x, y, z);
+									BlockEntity _blockEntity = world.getBlockEntity(_bp);
+									BlockState _bs = world.getBlockState(_bp);
+									if (_blockEntity != null)
+										_blockEntity.getPersistentData().putDouble("VoidExudate", ((new Object() {
+											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+												BlockEntity blockEntity = world.getBlockEntity(pos);
+												if (blockEntity != null)
+													return blockEntity.getPersistentData().getDouble(tag);
+												return -1;
+											}
+										}.getValue(world, BlockPos.containing(x, y, z), "VoidExudate")) - 1));
+									if (world instanceof Level _level)
+										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+								}
 							}
 						}
 					}
