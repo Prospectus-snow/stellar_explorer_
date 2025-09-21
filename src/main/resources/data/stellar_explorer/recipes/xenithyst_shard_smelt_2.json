@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 0.7,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "stellar_explorer:raw_xenithyst"
+  },
+  "result": "stellar_explorer:xenithyst_shard"
+}

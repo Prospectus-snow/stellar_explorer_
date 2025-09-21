@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "stellar_explorer:raw_xenithyst"
+  },
+  "result": "stellar_explorer:xenithyst_shard"
+}

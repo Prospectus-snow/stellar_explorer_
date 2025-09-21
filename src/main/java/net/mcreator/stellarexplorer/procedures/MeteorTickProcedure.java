@@ -4,13 +4,16 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.stellarexplorer.init.StellarExplorerModParticleTypes;
+import net.mcreator.stellarexplorer.init.StellarExplorerModEntities;
 import net.mcreator.stellarexplorer.entity.MeteorEntity;
 
 public class MeteorTickProcedure {
@@ -29,9 +32,24 @@ public class MeteorTickProcedure {
 					_level.explode(null, x, y, z, 16, Level.ExplosionInteraction.TNT);
 				if (entity instanceof MeteorEntity _datEntSetI)
 					_datEntSetI.getEntityData().set(MeteorEntity.DATA_SummonFire, 1);
+				for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 3, 5); index0++) {
+					if (world instanceof ServerLevel _level) {
+						Entity entityToSpawn = StellarExplorerModEntities.METEORITE_CREEPER.get().spawn(_level, BlockPos.containing(x + Mth.nextDouble(RandomSource.create(), -0.85, 0.85), y, z + Mth.nextDouble(RandomSource.create(), -0.85, 0.85)),
+								MobSpawnType.MOB_SUMMONED);
+						if (entityToSpawn != null) {
+							entityToSpawn.setDeltaMovement((Mth.nextDouble(RandomSource.create(), -0.85, 0.85)), (Mth.nextDouble(RandomSource.create(), 1.2, 1.4)), (Mth.nextDouble(RandomSource.create(), -0.85, 0.85)));
+						}
+					}
+				}
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = StellarExplorerModEntities.ABERRANT_METEORITE_CREEPER.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
 			}
 		} else {
-			for (int index0 = 0; index0 < 300; index0++) {
+			for (int index1 = 0; index1 < 300; index1++) {
 				targetX = x + Mth.nextInt(RandomSource.create(), -18, 18);
 				targetY = y + Mth.nextInt(RandomSource.create(), -10, 3);
 				targetZ = z + Mth.nextInt(RandomSource.create(), -18, 18);

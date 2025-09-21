@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "stellar_explorer:xenithyst_pickaxe",
+    "stellar_explorer:xenithyst_axe",
+    "stellar_explorer:xenithyst_sword",
+    "stellar_explorer:xenithyst_shovel",
+    "stellar_explorer:xenithyst_hoe"
+  ]
+}

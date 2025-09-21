@@ -1,0 +1,1998 @@
+{
+  "mod_elements": [
+    {
+      "name": "XenithystOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellar_explorer/models/block/xenithyst_ore.json",
+          "src/main/resources/assets/stellar_explorer/blockstates/xenithyst_ore.json",
+          "src/main/java/net/mcreator/stellarexplorer/block/XenithystOreBlock.java",
+          "src/main/resources/assets/stellar_explorer/models/item/xenithyst_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "DeepslateXenithystOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_xenithyst_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellar_explorer/models/item/deepslate_xenithyst_ore.json",
+          "src/main/resources/assets/stellar_explorer/models/block/deepslate_xenithyst_ore.json",
+          "src/main/java/net/mcreator/stellarexplorer/block/DeepslateXenithystOreBlock.java",
+          "src/main/resources/assets/stellar_explorer/blockstates/deepslate_xenithyst_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "StellarExplorer",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stellar_explorer",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "XenithystShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/item/XenithystShardItem.java",
+          "src/main/resources/assets/stellar_explorer/models/item/xenithyst_shard.json"
+        ]
+      }
+    },
+    {
+      "name": "RawXenithyst",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_xenithyst",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/item/RawXenithystItem.java",
+          "src/main/resources/assets/stellar_explorer/models/item/raw_xenithyst.json"
+        ]
+      }
+    },
+    {
+      "name": "XenithystOverworld",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_overworld",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/worldgen/configured_feature/xenithyst_overworld.json",
+          "src/main/resources/data/stellar_explorer/worldgen/placed_feature/xenithyst_overworld.json",
+          "src/main/resources/data/stellar_explorer/forge/biome_modifier/xenithyst_overworld_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "XenithystOreLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/loot_tables/blocks/xenithyst_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "DeepslateXenithystOreLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_xenithyst_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/loot_tables/blocks/deepslate_xenithyst_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "VoidTank",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "void_tank",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellar_explorer/models/item/void_tank.json",
+          "src/main/resources/data/stellar_explorer/loot_tables/blocks/void_tank.json",
+          "src/main/java/net/mcreator/stellarexplorer/block/VoidTankBlock.java",
+          "src/main/resources/assets/stellar_explorer/models/block/void_tank.json",
+          "src/main/resources/assets/stellar_explorer/blockstates/void_tank.json",
+          "src/main/java/net/mcreator/stellarexplorer/block/entity/VoidTankBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "RedstoneExtractor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "redstone_extractor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/block/entity/RedstoneExtractorBlockEntity.java",
+          "src/main/resources/data/stellar_explorer/loot_tables/blocks/redstone_extractor.json",
+          "src/main/resources/assets/stellar_explorer/blockstates/redstone_extractor.json",
+          "src/main/java/net/mcreator/stellarexplorer/block/RedstoneExtractorBlock.java",
+          "src/main/resources/assets/stellar_explorer/models/item/redstone_extractor.json",
+          "src/main/resources/assets/stellar_explorer/models/block/redstone_extractor.json"
+        ]
+      }
+    },
+    {
+      "name": "LocationRecordCardIsEmpty",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "location_record_card_is_empty",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/LocationRecordCardIsEmptyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LocationRecordCard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "location_record_card",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/item/LocationRecordCardItem.java",
+          "src/main/resources/assets/stellar_explorer/models/item/location_record_card.json",
+          "src/main/resources/assets/stellar_explorer/models/item/location_record_card_0.json"
+        ]
+      }
+    },
+    {
+      "name": "VoidExudateBarOverlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_exudate_bar_overlay",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/VoidExudateBarOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machine"
+    },
+    {
+      "name": "RedstoneExtractorGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "redstone_extractor_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/world/inventory/RedstoneExtractorGUIMenu.java",
+          "src/main/java/net/mcreator/stellarexplorer/client/gui/RedstoneExtractorGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "RedstoneExtractorTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_extractor_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/RedstoneExtractorTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WorkBarOverlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "work_bar_overlay",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/WorkBarOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machine"
+    },
+    {
+      "name": "RedstoneExtractorOverlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_extractor_overlay",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/RedstoneExtractorOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RedstoneExtractorBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_extractor_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellar_explorer/models/block/redstone_extractor_blockstates_blockstate_1.json",
+          "src/main/resources/assets/stellar_explorer/models/block/redstone_extractor_blockstates_blockstate_2.json",
+          "src/main/resources/assets/stellar_explorer/models/block/redstone_extractor_blockstates_blockstate_0.json"
+        ]
+      }
+    },
+    {
+      "name": "RedstoneExtractorGUIText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_extractor_gui_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/RedstoneExtractorGUITextProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machine"
+    },
+    {
+      "name": "VoidTankGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "void_tank_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/client/gui/VoidTankGUIScreen.java",
+          "src/main/java/net/mcreator/stellarexplorer/world/inventory/VoidTankGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "MachineTip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "machine_tip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/MachineTipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machine"
+    },
+    {
+      "name": "MachineStartPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "machine_start_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/MachineStartPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machine"
+    },
+    {
+      "name": "VoidTankTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_tank_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/VoidTankTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidTankBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_tank_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellar_explorer/models/block/void_tank_blockstates_blockstate_0.json",
+          "src/main/resources/assets/stellar_explorer/models/block/void_tank_blockstates_blockstate_3.json",
+          "src/main/resources/assets/stellar_explorer/models/block/void_tank_blockstates_blockstate_2.json",
+          "src/main/resources/assets/stellar_explorer/models/block/void_tank_blockstates_blockstate_4.json",
+          "src/main/resources/assets/stellar_explorer/models/block/void_tank_blockstates_blockstate_1.json"
+        ]
+      }
+    },
+    {
+      "name": "MachineVETooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "machine_ve_tooltip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/MachineVETooltipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Machine"
+    },
+    {
+      "name": "LocationRecordCardRightClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "location_record_card_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/LocationRecordCardRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LocationRecordCardToolTip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "location_record_card_tool_tip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/LocationRecordCardToolTipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GetMaxVE",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_max_ve",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/GetMaxVEProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machine"
+    },
+    {
+      "name": "EnergyOutput",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "energy_output",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/block/entity/EnergyOutputBlockEntity.java",
+          "src/main/resources/assets/stellar_explorer/blockstates/energy_output.json",
+          "src/main/java/net/mcreator/stellarexplorer/block/EnergyOutputBlock.java",
+          "src/main/resources/data/stellar_explorer/loot_tables/blocks/energy_output.json",
+          "src/main/resources/assets/stellar_explorer/models/item/energy_output.json",
+          "src/main/resources/assets/stellar_explorer/models/block/energy_output.json"
+        ]
+      }
+    },
+    {
+      "name": "EnergyOutputBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_output_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellar_explorer/models/block/energy_output_blockstates_blockstate_0.json"
+        ]
+      }
+    },
+    {
+      "name": "LocationRecordCardRightClickAir",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "location_record_card_right_click_air",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/LocationRecordCardRightClickAirProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnergyOutputRightClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_output_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/EnergyOutputRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VEOutput",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ve_output",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/client/particle/VEOutputParticle.java",
+          "src/main/resources/assets/stellar_explorer/particles/ve_output.json"
+        ]
+      }
+    },
+    {
+      "name": "MachineVEOutput",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "machine_ve_output",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/MachineVEOutputProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machine"
+    },
+    {
+      "name": "Meteor",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "meteor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/entity/MeteorEntity.java",
+          "src/main/java/net/mcreator/stellarexplorer/client/renderer/MeteorRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "MeteorTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meteor_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/MeteorTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MeteorHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meteor_hurt",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/MeteorHurtProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "MeteorAttractor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "meteor_attractor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellar_explorer/models/item/meteor_attractor.json",
+          "src/main/resources/assets/stellar_explorer/blockstates/meteor_attractor.json",
+          "src/main/resources/data/stellar_explorer/loot_tables/blocks/meteor_attractor.json",
+          "src/main/resources/assets/stellar_explorer/models/block/meteor_attractor.json",
+          "src/main/java/net/mcreator/stellarexplorer/block/entity/MeteorAttractorBlockEntity.java",
+          "src/main/java/net/mcreator/stellarexplorer/block/MeteorAttractorBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "MeteorAttractorGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "meteor_attractor_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/client/gui/MeteorAttractorGUIScreen.java",
+          "src/main/java/net/mcreator/stellarexplorer/world/inventory/MeteorAttractorGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "MachineVEInput",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "machine_ve_input",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/MachineVEInputProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Machine"
+    },
+    {
+      "name": "MeteorAttractorTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meteor_attractor_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/MeteorAttractorTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MeteorAttractorBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meteor_attractor_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellar_explorer/models/block/meteor_attractor_blockstates_blockstate_0.json"
+        ]
+      }
+    },
+    {
+      "name": "BigMeteorSmoke",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "big_meteor_smoke",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/client/particle/BigMeteorSmokeParticle.java",
+          "src/main/resources/assets/stellar_explorer/particles/big_meteor_smoke.json"
+        ]
+      }
+    },
+    {
+      "name": "MeteoriteCreeper",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "meteorite_creeper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/client/renderer/MeteoriteCreeperRenderer.java",
+          "src/main/java/net/mcreator/stellarexplorer/entity/MeteoriteCreeperEntity.java",
+          "src/main/resources/assets/stellar_explorer/models/item/meteorite_creeper_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "MeteoriteCreeperRandomWalk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meteorite_creeper_random_walk",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/MeteoriteCreeperRandomWalkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MeteoriteCreeperAngry",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meteorite_creeper_angry",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/MeteoriteCreeperAngryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MeteoriteCreeperAnimationAttack",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meteorite_creeper_animation_attack",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/MeteoriteCreeperAnimationAttackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MeteoriteCreeperTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meteorite_creeper_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/MeteoriteCreeperTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MeteoriteCreeperSize",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meteorite_creeper_size",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/MeteoriteCreeperSizeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MachineFrame",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "machine_frame",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellar_explorer/blockstates/machine_frame.json",
+          "src/main/resources/assets/stellar_explorer/models/block/machine_frame.json",
+          "src/main/resources/data/stellar_explorer/loot_tables/blocks/machine_frame.json",
+          "src/main/resources/assets/stellar_explorer/models/item/machine_frame.json",
+          "src/main/java/net/mcreator/stellarexplorer/block/MachineFrameBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "MachineFrameRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "machine_frame_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/recipes/machine_frame_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "XenithystShardSmelt",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_shard_smelt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/recipes/xenithyst_shard_smelt.json"
+        ]
+      }
+    },
+    {
+      "name": "XenithystShardSmelt2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_shard_smelt_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/recipes/xenithyst_shard_smelt_2.json"
+        ]
+      }
+    },
+    {
+      "name": "VoidTankRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_tank_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/recipes/void_tank_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RedstoneExtractorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_extractor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/recipes/redstone_extractor_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LocationRecordCardRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "location_record_card_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/recipes/location_record_card_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EnergyOutputRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_output_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/recipes/energy_output_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MeteorAttractorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meteor_attractor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/recipes/meteor_attractor_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeper",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "aberrant_meteorite_creeper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/entity/AberrantMeteoriteCreeperEntity.java",
+          "src/main/resources/assets/stellar_explorer/models/item/aberrant_meteorite_creeper_spawn_egg.json",
+          "src/main/java/net/mcreator/stellarexplorer/client/renderer/AberrantMeteoriteCreeperRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperRandomWalk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aberrant_meteorite_creeper_random_walk",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/AberrantMeteoriteCreeperRandomWalkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperAngry",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aberrant_meteorite_creeper_angry",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/AberrantMeteoriteCreeperAngryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperAnimationAttack1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aberrant_meteorite_creeper_animation_attack_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/AberrantMeteoriteCreeperAnimationAttack1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperAnimationAttack2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aberrant_meteorite_creeper_animation_attack_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/AberrantMeteoriteCreeperAnimationAttack2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperAnimationAttack3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aberrant_meteorite_creeper_animation_attack_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/AberrantMeteoriteCreeperAnimationAttack3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperAnimationAttack4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aberrant_meteorite_creeper_animation_attack_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/AberrantMeteoriteCreeperAnimationAttack4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperAnimationAttack5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aberrant_meteorite_creeper_animation_attack_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/AberrantMeteoriteCreeperAnimationAttack5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperAnimationAttack6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aberrant_meteorite_creeper_animation_attack_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/AberrantMeteoriteCreeperAnimationAttack6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperSize",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aberrant_meteorite_creeper_size",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/AberrantMeteoriteCreeperSizeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aberrant_meteorite_creeper_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/AberrantMeteoriteCreeperTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlockBreakParticleSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "block_break_particle_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/BlockBreakParticleSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "XZdistance",
+            "type": "number"
+          },
+          {
+            "name": "Ydistance",
+            "type": "number"
+          },
+          {
+            "name": "density",
+            "type": "number"
+          },
+          {
+            "name": "speed",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmptyItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellar_explorer/models/item/empty_item.json",
+          "src/main/java/net/mcreator/stellarexplorer/item/EmptyItemItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ShockWave",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shock_wave",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/entity/ShockWaveEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "ShockWaveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shock_wave_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/ShockWaveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlockBreakParticleSpawn2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "block_break_particle_spawn_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/BlockBreakParticleSpawn2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "distance",
+            "type": "number"
+          },
+          {
+            "name": "getangle",
+            "type": "number"
+          },
+          {
+            "name": "speedXZ",
+            "type": "number"
+          },
+          {
+            "name": "speedY",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "aberrant_meteorite_creeper_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/entity/AberrantMeteoriteCreeperProjectileEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperProjectileTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aberrant_meteorite_creeper_projectile_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/AberrantMeteoriteCreeperProjectileTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperBomb",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aberrant_meteorite_creeper_bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/client/particle/AberrantMeteoriteCreeperBombParticle.java",
+          "src/main/resources/assets/stellar_explorer/particles/aberrant_meteorite_creeper_bomb.json"
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperProjectileHitBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aberrant_meteorite_creeper_projectile_hit_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/AberrantMeteoriteCreeperProjectileHitBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperProjectileHitEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aberrant_meteorite_creeper_projectile_hit_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/AberrantMeteoriteCreeperProjectileHitEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AberrantMeteoriteCreeperAnimationWalk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aberrant_meteorite_creeper_animation_walk",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/AberrantMeteoriteCreeperAnimationWalkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "XenithystPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellar_explorer/models/item/xenithyst_pickaxe.json",
+          "src/main/java/net/mcreator/stellarexplorer/item/XenithystPickaxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "XenithystAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/item/XenithystAxeItem.java",
+          "src/main/resources/assets/stellar_explorer/models/item/xenithyst_axe.json"
+        ]
+      }
+    },
+    {
+      "name": "XenithystSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellar_explorer/models/item/xenithyst_sword.json",
+          "src/main/java/net/mcreator/stellarexplorer/item/XenithystSwordItem.java"
+        ]
+      }
+    },
+    {
+      "name": "XenithystShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/stellar_explorer/models/item/xenithyst_shovel.json",
+          "src/main/java/net/mcreator/stellarexplorer/item/XenithystShovelItem.java"
+        ]
+      }
+    },
+    {
+      "name": "XenithystHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/item/XenithystHoeItem.java",
+          "src/main/resources/assets/stellar_explorer/models/item/xenithyst_hoe.json"
+        ]
+      }
+    },
+    {
+      "name": "XenithystPickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/recipes/xenithyst_pickaxe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "XenithystAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/recipes/xenithyst_axe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "XenithystSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/recipes/xenithyst_sword_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "XenithystShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/recipes/xenithyst_shovel_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "XenithystHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenithyst_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/recipes/xenithyst_hoe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Groundshock",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "groundshock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/stellar_explorer/damage_type/groundshock.json"
+        ]
+      }
+    },
+    {
+      "name": "ShieldBreak",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "shield_break",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/stellarexplorer/procedures/ShieldBreakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:XenithystPickaxe"
+    ],
+    "DAMAGE_TYPES:minecraft:bypasses_shield": [
+      "CUSTOM:Groundshock"
+    ],
+    "ITEMS:stellar_explorer:can_attack_meteor_mob_tool": [
+      "CUSTOM:XenithystPickaxe",
+      "CUSTOM:XenithystAxe",
+      "CUSTOM:XenithystSword",
+      "CUSTOM:XenithystShovel",
+      "CUSTOM:XenithystHoe"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~CUSTOM:XenithystHoe"
+    ],
+    "BLOCKS:stellar_explorer:machine": [
+      "CUSTOM:VoidTank",
+      "CUSTOM:RedstoneExtractor",
+      "CUSTOM:MeteorAttractor"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:XenithystSword"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:XenithystShovel"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:XenithystAxe"
+    ]
+  },
+  "tab_element_order": {
+    "CUSTOM:StellarExplorer": [
+      "MeteoriteCreeper",
+      "AberrantMeteoriteCreeper",
+      "XenithystOre",
+      "DeepslateXenithystOre",
+      "RawXenithyst",
+      "XenithystShard",
+      "LocationRecordCard",
+      "EnergyOutput",
+      "VoidTank",
+      "RedstoneExtractor",
+      "MeteorAttractor",
+      "MachineFrame",
+      "XenithystSword",
+      "XenithystShovel",
+      "XenithystPickaxe",
+      "XenithystAxe",
+      "XenithystHoe"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.stellar_explorer.location_record_card.description_0": "§8No location selected",
+      "death.attack.groundshock.item": "%1$s was shattered by %2$s using %3$s",
+      "entity.stellar_explorer.meteor": "Meteor",
+      "item.stellar_explorer.machine.consumption_rate": "Consumption Rate: ",
+      "item.stellar_explorer.xenithyst_hoe": "Xenithyst Hoe",
+      "block.stellar_explorer.machine_frame": "Machine Frame",
+      "block.stellar_explorer.void_tank": "Void Tank",
+      "item.stellar_explorer.location_record_card": "Location Record Card",
+      "death.attack.groundshock.player": "%1$s was shattered whilst trying to escape %2$s",
+      "block.stellar_explorer.meteor_attractor.description_0": "§8Summons meteor when powered by Redstone",
+      "block.stellar_explorer.meteor_attractor.description_1": "§8Can wirelessly receive Void Exudate like Energy Output",
+      "death.attack.groundshock": "%1$s was shattered",
+      "item.stellar_explorer.raw_xenithyst": "Raw Xenithyst",
+      "item.stellar_explorer.machine.maxvoidexudate": "Max Capacity: ",
+      "item.stellar_explorer.xenithyst_sword": "Xenithyst Sword",
+      "block.stellar_explorer.xenithyst_ore": "Xenithyst Ore",
+      "item.stellar_explorer.machine.vespeed": "Output Speed: ",
+      "block.stellar_explorer.redstone_extractor.description_1": "§8Signal strength affects speed",
+      "block.stellar_explorer.redstone_extractor.description_0": "§8Slowly extract Void Exudate from Redstone Signal",
+      "block.stellar_explorer.energy_output": "Energy Output",
+      "item.stellar_explorer.machine.operating_cycle": "Operating Speed: ",
+      "item.stellar_explorer.meteorite_creeper_spawn_egg": "Meteorite Creeper Spawn Egg",
+      "item.stellar_explorer.xenithyst_pickaxe": "Xenithyst Pickaxe",
+      "item.stellar_explorer.aberrant_meteorite_creeper_spawn_egg": "Aberrant Meteorite Creeper Spawn Egg",
+      "block.stellar_explorer.deepslate_xenithyst_ore": "Deepslate Xenithyst Ore",
+      "block.stellar_explorer.energy_output.description_1": "§8Works when placed above a machine",
+      "block.stellar_explorer.energy_output.description_2": "§8Enables wireless transfer of Void Exudate between machines",
+      "block.stellar_explorer.energy_output.description_0": "§8Right-click to switch on/off",
+      "entity.stellar_explorer.aberrant_meteorite_creeper": "Aberrant Meteorite Creeper",
+      "item.stellar_explorer.description_shift": "§8Hold §5[Shift] §8for Details",
+      "item.stellar_explorer.xenithyst_axe": "Xenithyst Axe",
+      "item_group.stellar_explorer.stellar_explorer": "Stellar Explorer",
+      "item.stellar_explorer.xenithyst_shovel": "Xenithyst Shovel",
+      "block.stellar_explorer.meteor_attractor": "Meteor Attractor",
+      "item.stellar_explorer.xenithyst_shard": "Xenithyst Shard",
+      "item.stellar_explorer.machine.maxvespeed": "Max Output Speed: ",
+      "entity.stellar_explorer.meteorite_creeper": "Meteorite Creeper",
+      "block.stellar_explorer.void_tank.description_0": "§8Stores a Large Amount of Void Exudate",
+      "item.stellar_explorer.empty_item": "Empty Item",
+      "block.stellar_explorer.redstone_extractor": "Redstone Extractor"
+    },
+    "zh_cn": {
+      "item.stellar_explorer.location_record_card.description_0": "§8无位置信息",
+      "death.attack.groundshock.item": "%1$s 被 %2$s 用 %3$s 震碎了",
+      "entity.stellar_explorer.meteor": "陨石",
+      "item.stellar_explorer.machine.consumption_rate": "耗能速度：",
+      "item.stellar_explorer.xenithyst_hoe": "异硫锄",
+      "block.stellar_explorer.machine_frame": "机器框架",
+      "block.stellar_explorer.void_tank": "虚空储罐",
+      "item.stellar_explorer.location_record_card": "寻位卡",
+      "death.attack.groundshock.player": "%1$s 在试图逃离 %2$s 时被震碎了",
+      "block.stellar_explorer.meteor_attractor.description_0": "§8接入红石信号时召唤陨石",
+      "block.stellar_explorer.meteor_attractor.description_1": "§8能够像能量传输端一样无线输入虚空渗出物",
+      "death.attack.groundshock": "%1$s 被震碎了",
+      "item.stellar_explorer.machine.maxvoidexudate": "最大储量：",
+      "item.stellar_explorer.raw_xenithyst": "异琉原石",
+      "item.stellar_explorer.xenithyst_sword": "异硫剑",
+      "block.stellar_explorer.xenithyst_ore": "异琉矿石",
+      "item.stellar_explorer.machine.vespeed": "产出速度：",
+      "block.stellar_explorer.redstone_extractor.description_1": "§8信号强度影响工作速度",
+      "block.stellar_explorer.redstone_extractor.description_0": "§8缓慢地从红石信号中提取虚空渗出物",
+      "block.stellar_explorer.energy_output": "能量传输端",
+      "item.stellar_explorer.machine.operating_cycle": "工作速度：",
+      "item.stellar_explorer.meteorite_creeper_spawn_egg": "陨岩苦力怕刷怪蛋",
+      "item.stellar_explorer.xenithyst_pickaxe": "异硫镐",
+      "item.stellar_explorer.aberrant_meteorite_creeper_spawn_egg": "畸变陨岩苦力怕刷怪蛋",
+      "block.stellar_explorer.deepslate_xenithyst_ore": "深层异琉矿石",
+      "block.stellar_explorer.energy_output.description_1": "§8放置在机器上方生效",
+      "block.stellar_explorer.energy_output.description_2": "§8使两个机器之间能够无线传输虚空渗出物",
+      "block.stellar_explorer.energy_output.description_0": "§8右击切换开关",
+      "entity.stellar_explorer.aberrant_meteorite_creeper": "畸变陨岩苦力怕",
+      "item.stellar_explorer.description_shift": "§8按住§5[Shift]§8查看详情",
+      "item.stellar_explorer.xenithyst_axe": "异硫斧",
+      "item_group.stellar_explorer.stellar_explorer": "星维探索者",
+      "item.stellar_explorer.xenithyst_shovel": "异硫锹",
+      "block.stellar_explorer.meteor_attractor": "陨石牵引器",
+      "item.stellar_explorer.xenithyst_shard": "异琉晶碎片",
+      "item.stellar_explorer.machine.maxvespeed": "最大产出速度：",
+      "entity.stellar_explorer.meteorite_creeper": "陨岩苦力怕",
+      "block.stellar_explorer.void_tank.description_0": "§8储存大量虚空渗出物",
+      "item.stellar_explorer.empty_item": "空物品",
+      "block.stellar_explorer.redstone_extractor": "红石提取器"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Machine",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "stellar_explorer",
+    "modName": "Stellar Explorer",
+    "version": "0.0.1.2",
+    "author": "Snow(^^",
+    "websiteURL": "https://mcreator.net",
+    "license": "MIT License",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "have fun^^",
+    "modElementsPackage": "net.mcreator.stellarexplorer"
+  },
+  "mcreatorVersion": 202400452410
+}

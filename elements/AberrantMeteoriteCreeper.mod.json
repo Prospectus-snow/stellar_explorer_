@@ -1,0 +1,312 @@
+{
+  "_fv": 73,
+  "_type": "livingentity",
+  "definition": {
+    "mobName": "Aberrant Meteorite Creeper",
+    "mobLabel": "",
+    "mobModelName": "ModelAberrantMeteoriteCreeper",
+    "mobModelTexture": "aberrant_meteorite_creeper.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
+    "solidBoundingBox": {
+      "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.1,
+      "name": "AberrantMeteoriteCreeperSize"
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.1
+    },
+    "modelLayers": [
+      {
+        "model": "Default",
+        "texture": "aberrant_meteorite_creeper_angry.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "AberrantMeteoriteCreeperAngry"
+        }
+      }
+    ],
+    "animations": [
+      {
+        "animation": {
+          "value": "CUSTOM:AberrantMeteoriteCreeperAnimation.idle"
+        },
+        "speed": 1.0,
+        "walking": false,
+        "amplitude": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:AberrantMeteoriteCreeperAnimation.walk"
+        },
+        "speed": 1.2,
+        "condition": {
+          "name": "AberrantMeteoriteCreeperAnimationWalk"
+        },
+        "walking": true,
+        "amplitude": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:AberrantMeteoriteCreeperAnimation.attack1_smash"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "AberrantMeteoriteCreeperAnimationAttack1"
+        },
+        "walking": false,
+        "amplitude": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:AberrantMeteoriteCreeperAnimation.attack2_head"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "AberrantMeteoriteCreeperAnimationAttack2"
+        },
+        "walking": false,
+        "amplitude": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:AberrantMeteoriteCreeperAnimation.attack3_super_smash"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "AberrantMeteoriteCreeperAnimationAttack3"
+        },
+        "walking": false,
+        "amplitude": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:AberrantMeteoriteCreeperAnimation.attack4_shoot"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "AberrantMeteoriteCreeperAnimationAttack4"
+        },
+        "walking": false,
+        "amplitude": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:AberrantMeteoriteCreeperAnimation.attack5_jumpstart"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "AberrantMeteoriteCreeperAnimationAttack5"
+        },
+        "walking": false,
+        "amplitude": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:AberrantMeteoriteCreeperAnimation.attack6_jumpend"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "AberrantMeteoriteCreeperAnimationAttack6"
+        },
+        "walking": false,
+        "amplitude": 1.0
+      }
+    ],
+    "modelWidth": 1.4,
+    "modelHeight": 3.4,
+    "modelShadowSize": 0.8,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:StellarExplorer"
+      }
+    ],
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": ""
+    },
+    "equipmentOffHand": {
+      "value": ""
+    },
+    "equipmentHelmet": {
+      "value": ""
+    },
+    "equipmentBody": {
+      "value": ""
+    },
+    "equipmentLeggings": {
+      "value": ""
+    },
+    "equipmentBoots": {
+      "value": ""
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 10,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 1.0,
+    "movementSpeed": 0.25,
+    "stepHeight": 0.6,
+    "armorBaseValue": 6.0,
+    "trackingRange": 64,
+    "followRange": 30,
+    "health": 150,
+    "xpAmount": 35,
+    "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
+    "pushedByFluids": {
+      "fixedValue": true
+    },
+    "flyingMob": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": true,
+    "immuneToArrows": false,
+    "immuneToFallDamage": true,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": true,
+    "immuneToTrident": false,
+    "immuneToAnvil": false,
+    "immuneToWither": false,
+    "immuneToDragonBreath": false,
+    "mobDrop": {
+      "value": ""
+    },
+    "livingSound": {
+      "value": ""
+    },
+    "hurtSound": {
+      "value": "entity.creeper.hurt"
+    },
+    "deathSound": {
+      "value": "entity.creeper.death"
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "raidCelebrationSound": {
+      "value": ""
+    },
+    "entityDataEntries": [
+      {
+        "name": "Pathfinding",
+        "type": "logic",
+        "value": false
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "HasTarget",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "name": "InAttack",
+        "type": "logic",
+        "value": false
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "AttackTick",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "name": "InExplode",
+        "type": "logic",
+        "value": false
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "ExplodeTick",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "AttackType",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "CanRange",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "CanJump",
+        "type": "integer",
+        "value": 0
+      }
+    ],
+    "onMobTickUpdate": {
+      "name": "AberrantMeteoriteCreeperTick"
+    },
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">AberrantMeteoriteCreeperRandomWalk,AberrantMeteoriteCreeperRandomWalk</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">AberrantMeteoriteCreeperRandomWalk,AberrantMeteoriteCreeperRandomWalk</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": false,
+    "tameable": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "rangedAttackInterval": 20,
+    "rangedAttackRadius": 10.0,
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": false,
+    "spawningProbability": 20,
+    "mobSpawningType": "monster",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 4,
+    "restrictionBiomes": [],
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
+  }
+}

@@ -18,6 +18,8 @@ public class StellarExplorerModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, StellarExplorerMod.MODID);
 	public static final RegistryObject<CreativeModeTab> STELLAR_EXPLORER = REGISTRY.register("stellar_explorer",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.stellar_explorer.stellar_explorer")).icon(() -> new ItemStack(StellarExplorerModBlocks.XENITHYST_ORE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(StellarExplorerModItems.METEORITE_CREEPER_SPAWN_EGG.get());
+				tabData.accept(StellarExplorerModItems.ABERRANT_METEORITE_CREEPER_SPAWN_EGG.get());
 				tabData.accept(StellarExplorerModBlocks.XENITHYST_ORE.get().asItem());
 				tabData.accept(StellarExplorerModBlocks.DEEPSLATE_XENITHYST_ORE.get().asItem());
 				tabData.accept(StellarExplorerModItems.RAW_XENITHYST.get());
@@ -27,5 +29,11 @@ public class StellarExplorerModTabs {
 				tabData.accept(StellarExplorerModBlocks.VOID_TANK.get().asItem());
 				tabData.accept(StellarExplorerModBlocks.REDSTONE_EXTRACTOR.get().asItem());
 				tabData.accept(StellarExplorerModBlocks.METEOR_ATTRACTOR.get().asItem());
+				tabData.accept(StellarExplorerModBlocks.MACHINE_FRAME.get().asItem());
+				tabData.accept(StellarExplorerModItems.XENITHYST_SWORD.get());
+				tabData.accept(StellarExplorerModItems.XENITHYST_SHOVEL.get());
+				tabData.accept(StellarExplorerModItems.XENITHYST_PICKAXE.get());
+				tabData.accept(StellarExplorerModItems.XENITHYST_AXE.get());
+				tabData.accept(StellarExplorerModItems.XENITHYST_HOE.get());
 			}).build());
 }

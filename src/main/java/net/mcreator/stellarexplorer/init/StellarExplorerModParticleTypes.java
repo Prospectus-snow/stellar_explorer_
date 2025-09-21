@@ -17,4 +17,5 @@ public class StellarExplorerModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, StellarExplorerMod.MODID);
 	public static final RegistryObject<SimpleParticleType> VE_OUTPUT = REGISTRY.register("ve_output", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> BIG_METEOR_SMOKE = REGISTRY.register("big_meteor_smoke", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> ABERRANT_METEORITE_CREEPER_BOMB = REGISTRY.register("aberrant_meteorite_creeper_bomb", () -> new SimpleParticleType(true));
 }

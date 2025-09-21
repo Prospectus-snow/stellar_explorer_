@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:XenithystShard"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "CUSTOM:XenithystShard"
+      },
+      {
+        "value": "CUSTOM:XenithystShard"
+      },
+      {
+        "value": "CUSTOM:MachineFrame"
+      },
+      {
+        "value": "CUSTOM:XenithystShard"
+      },
+      {
+        "value": "CUSTOM:XenithystShard"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "CUSTOM:XenithystShard"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:VoidTank"
+    },
+    "name": "void_tank_recipe",
+    "namespace": "mod"
+  }
+}

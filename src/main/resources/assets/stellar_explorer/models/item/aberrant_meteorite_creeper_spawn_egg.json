@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "stellar_explorer:item/aberrant_meteorite_creeper_spawn_egg"
+  }
+}

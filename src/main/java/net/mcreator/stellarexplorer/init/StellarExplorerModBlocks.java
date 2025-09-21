@@ -14,6 +14,7 @@ import net.mcreator.stellarexplorer.block.XenithystOreBlock;
 import net.mcreator.stellarexplorer.block.VoidTankBlock;
 import net.mcreator.stellarexplorer.block.RedstoneExtractorBlock;
 import net.mcreator.stellarexplorer.block.MeteorAttractorBlock;
+import net.mcreator.stellarexplorer.block.MachineFrameBlock;
 import net.mcreator.stellarexplorer.block.EnergyOutputBlock;
 import net.mcreator.stellarexplorer.block.DeepslateXenithystOreBlock;
 import net.mcreator.stellarexplorer.StellarExplorerMod;
@@ -26,6 +27,7 @@ public class StellarExplorerModBlocks {
 	public static final RegistryObject<Block> REDSTONE_EXTRACTOR = REGISTRY.register("redstone_extractor", () -> new RedstoneExtractorBlock());
 	public static final RegistryObject<Block> ENERGY_OUTPUT = REGISTRY.register("energy_output", () -> new EnergyOutputBlock());
 	public static final RegistryObject<Block> METEOR_ATTRACTOR = REGISTRY.register("meteor_attractor", () -> new MeteorAttractorBlock());
+	public static final RegistryObject<Block> MACHINE_FRAME = REGISTRY.register("machine_frame", () -> new MachineFrameBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
