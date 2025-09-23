@@ -19,6 +19,8 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.stellarexplorer.entity.ShockWaveEntity;
 import net.mcreator.stellarexplorer.entity.MeteoriteCreeperEntity;
 import net.mcreator.stellarexplorer.entity.MeteorEntity;
+import net.mcreator.stellarexplorer.entity.LivingMeteoriteLaserEntity;
+import net.mcreator.stellarexplorer.entity.LivingMeteoriteEntity;
 import net.mcreator.stellarexplorer.entity.AberrantMeteoriteCreeperProjectileEntity;
 import net.mcreator.stellarexplorer.entity.AberrantMeteoriteCreeperEntity;
 import net.mcreator.stellarexplorer.StellarExplorerMod;
@@ -38,6 +40,10 @@ public class StellarExplorerModEntities {
 	public static final RegistryObject<EntityType<AberrantMeteoriteCreeperProjectileEntity>> ABERRANT_METEORITE_CREEPER_PROJECTILE = register("aberrant_meteorite_creeper_projectile",
 			EntityType.Builder.<AberrantMeteoriteCreeperProjectileEntity>of(AberrantMeteoriteCreeperProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(AberrantMeteoriteCreeperProjectileEntity::new).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LivingMeteoriteLaserEntity>> LIVING_METEORITE_LASER = register("living_meteorite_laser", EntityType.Builder.<LivingMeteoriteLaserEntity>of(LivingMeteoriteLaserEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(LivingMeteoriteLaserEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LivingMeteoriteEntity>> LIVING_METEORITE = register("living_meteorite", EntityType.Builder.<LivingMeteoriteEntity>of(LivingMeteoriteEntity::new, MobCategory.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LivingMeteoriteEntity::new).fireImmune().sized(0.7f, 0.7f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -51,6 +57,7 @@ public class StellarExplorerModEntities {
 			MeteorEntity.init();
 			MeteoriteCreeperEntity.init();
 			AberrantMeteoriteCreeperEntity.init();
+			LivingMeteoriteEntity.init();
 		});
 	}
 
@@ -59,5 +66,6 @@ public class StellarExplorerModEntities {
 		event.put(METEOR.get(), MeteorEntity.createAttributes().build());
 		event.put(METEORITE_CREEPER.get(), MeteoriteCreeperEntity.createAttributes().build());
 		event.put(ABERRANT_METEORITE_CREEPER.get(), AberrantMeteoriteCreeperEntity.createAttributes().build());
+		event.put(LIVING_METEORITE.get(), LivingMeteoriteEntity.createAttributes().build());
 	}
 }

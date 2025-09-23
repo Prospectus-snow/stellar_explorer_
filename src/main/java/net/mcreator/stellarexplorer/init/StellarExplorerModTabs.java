@@ -35,5 +35,6 @@ public class StellarExplorerModTabs {
 				tabData.accept(StellarExplorerModItems.XENITHYST_PICKAXE.get());
 				tabData.accept(StellarExplorerModItems.XENITHYST_AXE.get());
 				tabData.accept(StellarExplorerModItems.XENITHYST_HOE.get());
+				tabData.accept(StellarExplorerModItems.LIVING_METEORITE_SPAWN_EGG.get());
 			}).build());
 }

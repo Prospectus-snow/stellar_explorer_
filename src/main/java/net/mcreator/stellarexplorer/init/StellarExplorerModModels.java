@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.stellarexplorer.client.model.ModelMeteoriteCreeper;
 import net.mcreator.stellarexplorer.client.model.ModelMeteor;
+import net.mcreator.stellarexplorer.client.model.ModelLivingMeteorite;
 import net.mcreator.stellarexplorer.client.model.ModelAberrantMeteoriteCreeper;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -19,6 +20,7 @@ public class StellarExplorerModModels {
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ModelMeteor.LAYER_LOCATION, ModelMeteor::createBodyLayer);
 		event.registerLayerDefinition(ModelAberrantMeteoriteCreeper.LAYER_LOCATION, ModelAberrantMeteoriteCreeper::createBodyLayer);
+		event.registerLayerDefinition(ModelLivingMeteorite.LAYER_LOCATION, ModelLivingMeteorite::createBodyLayer);
 		event.registerLayerDefinition(ModelMeteoriteCreeper.LAYER_LOCATION, ModelMeteoriteCreeper::createBodyLayer);
 	}
 }

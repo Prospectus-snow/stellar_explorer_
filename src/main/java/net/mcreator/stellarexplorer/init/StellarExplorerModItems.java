@@ -53,6 +53,7 @@ public class StellarExplorerModItems {
 	public static final RegistryObject<Item> XENITHYST_SWORD = REGISTRY.register("xenithyst_sword", () -> new XenithystSwordItem());
 	public static final RegistryObject<Item> XENITHYST_SHOVEL = REGISTRY.register("xenithyst_shovel", () -> new XenithystShovelItem());
 	public static final RegistryObject<Item> XENITHYST_HOE = REGISTRY.register("xenithyst_hoe", () -> new XenithystHoeItem());
+	public static final RegistryObject<Item> LIVING_METEORITE_SPAWN_EGG = REGISTRY.register("living_meteorite_spawn_egg", () -> new ForgeSpawnEggItem(StellarExplorerModEntities.LIVING_METEORITE, -1, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
